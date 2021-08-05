@@ -1,0 +1,17 @@
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\grTest.dll
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\grTest.pdb
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\gr.exe
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\gr.pdb
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\gr.exe.config
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\Spider\Development\gr-homework\gr-homework\grTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Spider\Development\gr-homework\gr-homework\grTest\obj\Debug\grTest.csproj.AssemblyReference.cache
+E:\Spider\Development\gr-homework\gr-homework\grTest\obj\Debug\grTest.csproj.CoreCompileInputs.cache
+E:\Spider\Development\gr-homework\gr-homework\grTest\obj\Debug\grTest.csproj.CopyComplete
+E:\Spider\Development\gr-homework\gr-homework\grTest\obj\Debug\grTest.dll
+E:\Spider\Development\gr-homework\gr-homework\grTest\obj\Debug\grTest.pdb

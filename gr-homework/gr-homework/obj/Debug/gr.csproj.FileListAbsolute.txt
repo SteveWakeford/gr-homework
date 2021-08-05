@@ -1,0 +1,7 @@
+E:\Spider\Development\gr-homework\gr-homework\gr-homework\bin\Debug\gr.exe.config
+E:\Spider\Development\gr-homework\gr-homework\gr-homework\bin\Debug\gr.exe
+E:\Spider\Development\gr-homework\gr-homework\gr-homework\bin\Debug\gr.pdb
+E:\Spider\Development\gr-homework\gr-homework\gr-homework\obj\Debug\gr.csproj.AssemblyReference.cache
+E:\Spider\Development\gr-homework\gr-homework\gr-homework\obj\Debug\gr.csproj.CoreCompileInputs.cache
+E:\Spider\Development\gr-homework\gr-homework\gr-homework\obj\Debug\gr.exe
+E:\Spider\Development\gr-homework\gr-homework\gr-homework\obj\Debug\gr.pdb

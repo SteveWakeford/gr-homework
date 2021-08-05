@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gr-homework", "gr-homework\gr-homework.csproj", "{431FA27A-9093-45AB-B9FB-346C9EC6959D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gr", "gr-homework\gr.csproj", "{431FA27A-9093-45AB-B9FB-346C9EC6959D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grTest", "grTest\grTest.csproj", "{C54B683C-F0B2-4AC3-978B-FBFDD4E0F2C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{431FA27A-9093-45AB-B9FB-346C9EC6959D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{431FA27A-9093-45AB-B9FB-346C9EC6959D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{431FA27A-9093-45AB-B9FB-346C9EC6959D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54B683C-F0B2-4AC3-978B-FBFDD4E0F2C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54B683C-F0B2-4AC3-978B-FBFDD4E0F2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54B683C-F0B2-4AC3-978B-FBFDD4E0F2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54B683C-F0B2-4AC3-978B-FBFDD4E0F2C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
