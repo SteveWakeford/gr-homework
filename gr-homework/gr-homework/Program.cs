@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace gr
 {
@@ -12,28 +10,27 @@ namespace gr
         public static void Main(string[] args)
         {
             var fileName = ParseFileName(args);
-            
-            var personSet = BuildPersonSet(fileName);
+
+            var personSet = BuildSetFromLines(File.OpenRead(fileName), BuildPerson);
 
             personSet.OrderBy(p => p.FavoriteColor).ThenBy(p => p.LastName).ToList().ForEach(p => Console.WriteLine(p));
             personSet.OrderBy(p => p.DateOfBirth).ToList().ForEach(p => Console.WriteLine(p));
             personSet.OrderByDescending(p => p.LastName).ToList().ForEach(p => Console.WriteLine(p));
         }
 
-        private static ISet<Person> BuildPersonSet(string fileName)
+        private static ISet<T> BuildSetFromLines<T>(Stream stream, Func<string, T> buildItemFromLine)
         {
-            var set = new HashSet<Person>();
+            var set = new HashSet<T>();
 
-            using (var fileStream = File.OpenRead(fileName))
-            using (var fileStreamReader = new StreamReader(fileStream))
+            using (var streamReader = new StreamReader(stream))
             {
-                while (fileStreamReader.Peek() >= 0)
+                while (streamReader.Peek() >= 0)
                 {
-                    var line = fileStreamReader.ReadLine();
+                    var line = streamReader.ReadLine();
 
-                    var person = BuildPerson(line);
+                    var item = buildItemFromLine(line);
 
-                    set.Add(person);
+                    set.Add(item);
                 }
             }
 
@@ -42,7 +39,7 @@ namespace gr
 
         public static Person BuildPerson(string line)
         {
-            return new Person();
+            return null;
         }
 
         public static string ParseFileName(string[] args)
