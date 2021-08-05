@@ -5,27 +5,20 @@ using System;
 namespace grTest
 {
     [TestClass]
-    public class ProgramTest
+    public class ProgramArgsTest
     {
-        [TestMethod]
-        [Ignore]
-        public void ProgramMain()
-        {
-            Program.Main(null);
-        }
-
         [TestMethod]
         public void ParseFileNameDoesNotThrowOnOneArg()
         {
             var oneArg = new string[] { "one" };
-            Program.ParseFileName(oneArg);
+            ProgramArgs.ParseFileName(oneArg);
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void ParseFileNameThrowsOnNull()
         {
-            Program.ParseFileName(null);
+            ProgramArgs.ParseFileName(null);
         }
 
         [TestMethod]
@@ -33,7 +26,7 @@ namespace grTest
         public void ParseFileNameThrowsOnZeroArgs()
         {
             var zeroArgs = new string[] { };
-            Program.ParseFileName(zeroArgs);
+            ProgramArgs.ParseFileName(zeroArgs);
         }
 
         [TestMethod]
@@ -41,7 +34,7 @@ namespace grTest
         public void ParseFileNameThrowsOnTwoArgs()
         {
             var twoArgs = new string[] { "one", "two" };
-            Program.ParseFileName(twoArgs);
+            ProgramArgs.ParseFileName(twoArgs);
         }
 
         [TestMethod]
@@ -49,7 +42,7 @@ namespace grTest
         public void ParseFileNameThrowsOnThreeArgs()
         {
             var threeArgs = new string[] { "one", "two", "three" };
-            Program.ParseFileName(threeArgs);
+            ProgramArgs.ParseFileName(threeArgs);
         }
     }
 }

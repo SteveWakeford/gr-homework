@@ -49,14 +49,14 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProgramTest.cs" />
+    <Compile Include="ParseFileNameTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\gr-homework\gr.csproj">
+    <ProjectReference Include="..\gr\gr.csproj">
       <Project>{431FA27A-9093-45AB-B9FB-346C9EC6959D}</Project>
       <Name>gr</Name>
     </ProjectReference>

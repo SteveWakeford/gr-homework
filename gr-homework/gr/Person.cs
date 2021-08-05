@@ -47,5 +47,11 @@ namespace gr
         {
             return base.ToString();
         }
+
+        public static Person FromLine(string line)
+        {
+            // FIXME
+            return new Person(null, null, null, null, DateTime.Now);
+        }
     }
 }
