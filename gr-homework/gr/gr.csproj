@@ -62,7 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Person.cs" />
+    <Compile Include="PersonDisplay.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SetFromLines.cs" />
   </ItemGroup>

@@ -49,8 +49,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ParseFileNameTest.cs" />
+    <Compile Include="PersonDisplayTest.cs" />
+    <Compile Include="ProgramArgsTest.cs" />
+    <Compile Include="PersonTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetFromLinesTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
