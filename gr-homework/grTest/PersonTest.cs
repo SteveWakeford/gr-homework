@@ -60,5 +60,75 @@ namespace grTest
 
             Assert.AreNotEqual(p1, p2);
         }
+
+        [TestMethod]
+        public void FromPipeDelimitedLineBuildsPerson()
+        {
+            var line = "LastName | FirstName | Email | FavoriteColor | 1/1/1900";
+
+            var person = Person.Parse(line);
+
+            Assert.AreEqual(person, new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900")));
+        }
+
+        [TestMethod]
+        public void FromCommaDelimitedLineBuildsPerson()
+        {
+            var line = "LastName, FirstName, Email, FavoriteColor, 1/1/1900";
+
+            var person = Person.Parse(line);
+
+            Assert.AreEqual(person, new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900")));
+        }
+
+        [TestMethod]
+        public void FromSpaceDelimitedLineBuildsPerson()
+        {
+            var line = "LastName FirstName Email FavoriteColor 1/1/1900";
+
+            var person = Person.Parse(line);
+
+            Assert.AreEqual(person, new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900")));
+        }
+
+        [TestMethod]
+        public void NullLineBuildsNull()
+        {
+            string line = null;
+
+            var person = Person.Parse(line);
+
+            Assert.IsNull(person);
+        }
+
+        [TestMethod]
+        public void NotEnoughPartsBuildsNull()
+        {
+            var line = "LastName FirstName Email FavoriteColor";
+
+            var person = Person.Parse(line);
+
+            Assert.IsNull(person);
+        }
+
+        [TestMethod]
+        public void TooManyPartsBuildsNull()
+        {
+            var line = "LastName FirstName Email FavoriteColor 1/1/1900 1/1/1900";
+
+            var person = Person.Parse(line);
+
+            Assert.IsNull(person);
+        }
+
+        [TestMethod]
+        public void InvalidDateOfBirthReturnsNull()
+        {
+            var line = "LastName FirstName Email FavoriteColor Asdf";
+
+            var person = Person.Parse(line);
+
+            Assert.IsNull(person);
+        }
     }
 }

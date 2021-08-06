@@ -6,7 +6,7 @@ namespace gr
 {
     public static class SetFromLines
     {
-        public static ISet<T> Build<T>(Stream stream, Func<string, T> buildItemFromLine)
+        public static ISet<T> Build<T>(Stream stream, Func<string, T> parse)
         {
             var set = new HashSet<T>();
 
@@ -16,7 +16,13 @@ namespace gr
                 {
                     var line = streamReader.ReadLine();
 
-                    var item = buildItemFromLine(line);
+                    var item = parse(line);
+
+                    if (item == null)
+                    {
+                        Console.Error.WriteLine($"Failed to parse line '{line}'");
+                        continue;
+                    }
 
                     set.Add(item);
                 }

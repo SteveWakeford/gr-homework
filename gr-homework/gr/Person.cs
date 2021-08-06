@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace gr
 {
@@ -45,13 +46,24 @@ namespace gr
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"{LastName} {FirstName} {Email} {FavoriteColor} {DateOfBirth.ToString("M/d/yyyy", CultureInfo.InvariantCulture)}";
         }
 
-        public static Person FromLine(string line)
+        public static Person Parse(string line)
         {
-            // FIXME
-            return new Person(null, null, null, null, DateTime.Now);
+            if (line == null) return null;
+
+            var lineClean = line.Replace(" |", string.Empty).Replace(",", string.Empty);
+
+            var parts = lineClean.Split(' ');
+
+            if (parts.Length != 5) return null;
+
+            var isDateOfBirthParseable = DateTime.TryParse(parts[4], out var dateOfBirth);
+
+            if (!isDateOfBirthParseable) return null;
+
+            return new Person(parts[0], parts[1], parts[2], parts[3], dateOfBirth);
         }
     }
 }
