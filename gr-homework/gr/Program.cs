@@ -11,8 +11,13 @@ namespace gr
 
             var personSet = SetFromLines.Build(File.OpenRead(fileName), Person.Parse);
 
+            Console.WriteLine("Output 1:");
             PersonDisplay.Output1(personSet, Console.Out);
+
+            Console.WriteLine("Output 2:");
             PersonDisplay.Output2(personSet, Console.Out);
+
+            Console.WriteLine("Output 3:");
             PersonDisplay.Output3(personSet, Console.Out);
         }
     }

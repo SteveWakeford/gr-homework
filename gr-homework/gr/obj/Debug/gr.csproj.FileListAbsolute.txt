@@ -11,4 +11,3 @@ E:\Spider\Development\gr-homework\gr-homework\gr\bin\Debug\gr.pdb
 E:\Spider\Development\gr-homework\gr-homework\gr\obj\Debug\gr.csproj.CoreCompileInputs.cache
 E:\Spider\Development\gr-homework\gr-homework\gr\obj\Debug\gr.exe
 E:\Spider\Development\gr-homework\gr-homework\gr\obj\Debug\gr.pdb
-E:\Spider\Development\gr-homework\gr-homework\gr\obj\Debug\gr.csproj.AssemblyReference.cache

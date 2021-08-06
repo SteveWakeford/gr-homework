@@ -1,0 +1,10 @@
+Mouse Mickey mickey@disney.com Red 2/1/1910
+Mantle Mickey mickey@yankees.com Red 5/5/1915
+Duck Daffy daffey@disney.com Green 5/6/1940
+Bunny Bugs bugs@warnerbros.com Gray 6/6/1955
+Devil Taz taz@someisland.net Brown 7/7/1977
+Some Garbage Record
+
+# This is a comment
+Important Very client@bigtime.org Blue 9/9/2009
+end.
