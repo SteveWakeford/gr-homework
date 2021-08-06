@@ -31,7 +31,7 @@ namespace grWeb.Controllers
 
         public void Post()
         {
-            // read content instead of createing a text/plain formatter
+            // read content instead of creating a text/plain formatter
             var content = Task.Run(Request.Content.ReadAsStringAsync).Result;
 
             var person = Person.Parse(content);
