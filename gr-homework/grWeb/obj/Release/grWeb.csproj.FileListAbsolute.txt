@@ -1,0 +1,2 @@
+E:\Spider\Development\gr-homework\gr-homework\grWeb\obj\Release\grWeb.csproj.AssemblyReference.cache
+E:\Spider\Development\gr-homework\gr-homework\grWeb\obj\Release\grWeb.csproj.CoreCompileInputs.cache

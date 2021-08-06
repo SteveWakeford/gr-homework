@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gr", "gr\gr.csproj", "{431F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grTest", "grTest\grTest.csproj", "{C54B683C-F0B2-4AC3-978B-FBFDD4E0F2C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grWeb", "grWeb\grWeb.csproj", "{8E6C9DB0-F81F-45DE-84F2-B19B56E6BE4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C54B683C-F0B2-4AC3-978B-FBFDD4E0F2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C54B683C-F0B2-4AC3-978B-FBFDD4E0F2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C54B683C-F0B2-4AC3-978B-FBFDD4E0F2C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E6C9DB0-F81F-45DE-84F2-B19B56E6BE4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6C9DB0-F81F-45DE-84F2-B19B56E6BE4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6C9DB0-F81F-45DE-84F2-B19B56E6BE4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6C9DB0-F81F-45DE-84F2-B19B56E6BE4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
