@@ -10,8 +10,8 @@ namespace grTest
         [TestMethod]
         public void SamePersonIsEqual()
         {
-            Person p1 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
-            Person p2 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
+            var p1 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
+            var p2 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
 
             Assert.AreEqual(p1, p2);
         }
@@ -19,8 +19,8 @@ namespace grTest
         [TestMethod]
         public void SamePersonIsEqualWithSomeNulls()
         {
-            Person p1 = new Person("LastName", null, "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
-            Person p2 = new Person("LastName", null, "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
+            var p1 = new Person("LastName", null, "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
+            var p2 = new Person("LastName", null, "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
 
             Assert.AreEqual(p1, p2);
         }
@@ -28,8 +28,8 @@ namespace grTest
         [TestMethod]
         public void SamePersonHasSameHashCode()
         {
-            Person p1 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
-            Person p2 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
+            var p1 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
+            var p2 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
 
             Assert.AreEqual(p1.GetHashCode(), p2.GetHashCode());
         }
@@ -37,8 +37,8 @@ namespace grTest
         [TestMethod]
         public void DifferentPersonIsNotEqual()
         {
-            Person p1 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
-            Person p2 = new Person("DifferentLastName", "DifferentFirstName", "Differentmail", "DifferentFavoriteColor", DateTime.Parse("2/2/1902"));
+            var p1 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
+            var p2 = new Person("DifferentLastName", "DifferentFirstName", "Differentmail", "DifferentFavoriteColor", DateTime.Parse("2/2/1902"));
 
             Assert.AreNotEqual(p1, p2);
         }
@@ -46,8 +46,8 @@ namespace grTest
         [TestMethod]
         public void DifferentPersonHasDifferentHashCode()
         {
-            Person p1 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
-            Person p2 = new Person("DifferentLastName", "DifferentFirstName", "Differentmail", "DifferentFavoriteColor", DateTime.Parse("2/2/1902"));
+            var p1 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
+            var p2 = new Person("DifferentLastName", "DifferentFirstName", "Differentmail", "DifferentFavoriteColor", DateTime.Parse("2/2/1902"));
 
             Assert.AreNotEqual(p1.GetHashCode(), p2.GetHashCode());
         }
@@ -55,7 +55,7 @@ namespace grTest
         [TestMethod]
         public void NullPersonIsNotEqual()
         {
-            Person p1 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
+            var p1 = new Person("LastName", "FirstName", "Email", "FavoriteColor", DateTime.Parse("1/1/1900"));
             Person p2 = null;
 
             Assert.AreNotEqual(p1, p2);
@@ -122,7 +122,7 @@ namespace grTest
         }
 
         [TestMethod]
-        public void InvalidDateOfBirthReturnsNull()
+        public void InvalidDateOfBirthBuildsNull()
         {
             var line = "LastName FirstName Email FavoriteColor Asdf";
 
