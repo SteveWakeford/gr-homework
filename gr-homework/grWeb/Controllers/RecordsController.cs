@@ -2,13 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace grWeb.Controllers
 {
     public class RecordsController : ApiController
     {
-        private static readonly List<Person> Persons = new List<Person>();
+        public static readonly List<Person> Persons = new List<Person>();
 
         [Route("records/color")]
         public IEnumerable<Person> GetSortedByColor()
@@ -28,9 +29,9 @@ namespace grWeb.Controllers
             return Persons.OrderBy(p => p.LastName);
         }
 
-        public async void Post()
+        public void Post()
         {
-            var content = await Request.Content.ReadAsStringAsync();
+            var content = Task.Run(Request.Content.ReadAsStringAsync).Result;
 
             var person = Person.Parse(content);
 
