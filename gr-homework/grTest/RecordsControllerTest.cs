@@ -12,7 +12,6 @@ namespace grTest
     [TestClass]
     public class RecordsControllerTest
     {
-
         private static void PostBody(RecordsController recordsController, string body)
         {
             var httpRequestMessage = new HttpRequestMessage
